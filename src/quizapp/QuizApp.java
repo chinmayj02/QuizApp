@@ -15,7 +15,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
+import javafx.scene.shape.Rectangle;
 
 public class QuizApp extends Application {
 
@@ -439,14 +441,14 @@ public class QuizApp extends Application {
                                 Pane layout0 = new Pane();
                                 Scene scene0 = new Scene(layout0);
 
-                                layout0.getChildren().addAll(text, textField,textField0,textField1,label,line,textField2,
-                                        textField3,textField4,textField5,textField6,textField7,textField8,textField9,
-                                        textField10,textField11,textField12,textField13,textField14,textField15,textField16,
-                                        textField17,textField18,textField19,textField110,textField111,textField112,textField113,textField114,
-                                        textField115,textField116,radioButton, radioButton0, radioButton1,
-                                        radioButton2,radioButton3,radioButton4,radioButton5,radioButton6,radioButton7,radioButton8,radioButton9,
-                                        radioButton10,radioButton11,radioButton12,radioButton13,radioButton14,radioButton15,radioButton16,radioButton17,
-                                        radioButton18,textField117,textField118,textField119,textField1110,textField1111,button);
+                                layout0.getChildren().addAll(text, textField, textField0, textField1, label, line, textField2,
+                                        textField3, textField4, textField5, textField6, textField7, textField8, textField9,
+                                        textField10, textField11, textField12, textField13, textField14, textField15, textField16,
+                                        textField17, textField18, textField19, textField110, textField111, textField112, textField113, textField114,
+                                        textField115, textField116, radioButton, radioButton0, radioButton1,
+                                        radioButton2, radioButton3, radioButton4, radioButton5, radioButton6, radioButton7, radioButton8, radioButton9,
+                                        radioButton10, radioButton11, radioButton12, radioButton13, radioButton14, radioButton15, radioButton16, radioButton17,
+                                        radioButton18, textField117, textField118, textField119, textField1110, textField1111, button);
                                 primaryStage.setTitle("create quiz");
                                 primaryStage.setScene(scene0);
                                 primaryStage.show();
@@ -461,178 +463,129 @@ public class QuizApp extends Application {
                                         }
                                     }
                                 };
-                                                                button.setOnMouseClicked(handler);
+                                button.setOnMouseClicked(handler);
 
-
-                                        } else if (event.getSource() == button3) {
+                            } else if (event.getSource() == button3) {
 // sign up button
-                                        }
+                            }
 
-                                        event.consume();
-                                    }
+                            event.consume();
+                        }
 
-                                };
+                    };
 
-                                button2.setOnMouseClicked(handler);
-                                button3.setOnMouseClicked(handler);
+                    button2.setOnMouseClicked(handler);
+                    button3.setOnMouseClicked(handler);
 
-                            } else if (event.getSource() == button0) {
-                                Text text2 = new Text();
-                                TextField textField1 = new TextField();
-                                Button button4 = new Button();
-                                Button button5 = new Button();
+                } else if (event.getSource() == button0) {
+                    Text text2 = new Text();
+                    TextField textField1 = new TextField();
+                    Button button4 = new Button();
+                    Button button5 = new Button();
 
-                                text2.setLayoutX(141.0);
-                                text2.setLayoutY(100.0);
-                                text2.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
-                                text2.setStrokeWidth(0.0);
-                                text2.setText("Player's portal");
-                                text2.setFont(new Font(50.0));
+                    text2.setLayoutX(141.0);
+                    text2.setLayoutY(100.0);
+                    text2.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
+                    text2.setStrokeWidth(0.0);
+                    text2.setText("Player's portal");
+                    text2.setFont(new Font(50.0));
 
-                                textField1.setLayoutX(225.0);
-                                textField1.setLayoutY(175.0);
-                                textField1.setPromptText("Username");
+                    textField1.setLayoutX(225.0);
+                    textField1.setLayoutY(175.0);
+                    textField1.setPromptText("Username");
 
-                                button4.setLayoutX(276.0);
-                                button4.setLayoutY(221.0);
-                                button4.setMnemonicParsing(false);
-                                button4.setText("Next");
+                    button4.setLayoutX(276.0);
+                    button4.setLayoutY(221.0);
+                    button4.setMnemonicParsing(false);
+                    button4.setText("Next");
 
-                                button5.setLayoutX(192.0);
-                                button5.setLayoutY(336.0);
-                                button5.setMnemonicParsing(false);
-                                button5.setText("If you don't have an account, click me");
-                                Pane layout1 = new Pane();
-                                Scene scene1 = new Scene(layout1);
+                    button5.setLayoutX(192.0);
+                    button5.setLayoutY(336.0);
+                    button5.setMnemonicParsing(false);
+                    button5.setText("If you don't have an account, click me");
+                    Pane layout1 = new Pane();
+                    Scene scene1 = new Scene(layout1);
 
-                                layout1.getChildren().addAll(text2, button4, button5, textField1);
-                                primaryStage.setTitle("Login");
-                                primaryStage.setScene(scene1);
-                                primaryStage.show();
-                                EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
+                    layout1.getChildren().addAll(text2, button4, button5, textField1);
+                    primaryStage.setTitle("Login");
+                    primaryStage.setScene(scene1);
+                    primaryStage.show();
+                    EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
 
-                                    @Override
-                                    public void handle(MouseEvent event) {
+                        @Override
+                        public void handle(MouseEvent event) {
 
-                                        if (event.getSource() == button4) {
+                            if (event.getSource() == button4) {
 // player login button
-                                            // validate here
+                                // validate here
 
-                                            Text text = new Text();
-                                            Label label = new Label();
-                                            Line line = new Line();
-                                            Label label0 = new Label();
-                                            Label label1 = new Label();
-                                            Label label2 = new Label();
-                                            Label label3 = new Label();
-                                            Button button = new Button();
-
-                                            text.setLayoutX(31.0);
-                                            text.setLayoutY(50.0);
-                                            text.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
-                                            text.setStrokeWidth(0.0);
-                                            text.setText("Hi Chinmay! Which quiz do you want to take today ?");
-                                            text.setFont(new Font(23.0));
-
-                                            label.setLayoutX(31.0);
-                                            label.setLayoutY(91.0);
-                                            label.setPrefHeight(25.0);
-                                            label.setPrefWidth(51.0);
-                                            label.setText("Name ");
-                                            label.setFont(new Font(15.0));
-
-                                            line.setEndX(499.0);
-                                            line.setLayoutX(101.0);
-                                            line.setLayoutY(69.0);
-                                            line.setStartX(-110.5);
-
-                                            label0.setLayoutX(82.0);
-                                            label0.setLayoutY(91.0);
-                                            label0.setPrefHeight(25.0);
-                                            label0.setPrefWidth(84.0);
-                                            label0.setText("Category");
-                                            label0.setFont(new Font(15.0));
-
-                                            label1.setLayoutX(166.0);
-                                            label1.setLayoutY(91.0);
-                                            label1.setPrefHeight(25.0);
-                                            label1.setPrefWidth(149.0);
-                                            label1.setText("Number of questions");
-                                            label1.setFont(new Font(15.0));
-
-                                            label2.setLayoutX(324.0);
-                                            label2.setLayoutY(91.0);
-                                            label2.setPrefHeight(25.0);
-                                            label2.setPrefWidth(51.0);
-                                            label2.setText("Points");
-                                            label2.setFont(new Font(15.0));
-
-                                            label3.setLayoutX(387.0);
-                                            label3.setLayoutY(91.0);
-                                            label3.setPrefHeight(25.0);
-                                            label3.setPrefWidth(100.0);
-                                            label3.setText("Highest score");
-                                            label3.setFont(new Font(15.0));
-
-                                            button.setLayoutX(499.0);
-                                            button.setLayoutY(91.0);
-                                            button.setMnemonicParsing(false);
-                                            button.setStyle("-fx-background-color: #00ff00;");
-                                            button.setText("Start quiz");
-
-                                            Pane layout1 = new Pane();
-                                            Scene scene1 = new Scene(layout1);
-
-                                            layout1.getChildren().addAll(text, label, line, label0, label1, label2, label3, button);
-                                            primaryStage.setTitle("Quizes");
-                                            primaryStage.setScene(scene1);
-                                            primaryStage.show();
-                                            EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
-
-                                                @Override
-                                                public void handle(MouseEvent event) {
-
-                                                    if (event.getSource() == button) {
-// start quiz button
-                                                    }
-                                                }
-                                            };
-                                                                            button.setOnMouseClicked(handler);
-
-                                        } else if (event.getSource() == button5) {
-// player signup
-                                        }
-
-                                        event.consume();
-                                    }
-
-                                };
-
-                                button4.setOnMouseClicked(handler);
-
-                                button5.setOnMouseClicked(handler);
-
-                            } else if (event.getSource()
-                                    == button1) {
-                                Text text2 = new Text();
+                                Text text = new Text();
+                                Label label = new Label();
+                                Line line = new Line();
+                                Label label0 = new Label();
+                                Label label1 = new Label();
+                                Label label2 = new Label();
+                                Label label3 = new Label();
                                 Button button = new Button();
 
-                                text2.setLayoutX(141.0);
-                                text2.setLayoutY(100.0);
-                                text2.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
-                                text2.setStrokeWidth(0.0);
-                                text2.setText("->Click create quiz if you want to add your own quiz.\n->Click on play quiz if you want to play quizes created by others.\n->You need to login to do any of the above.");
-                                text2.setFont(new Font(15.0));
+                                text.setLayoutX(31.0);
+                                text.setLayoutY(50.0);
+                                text.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
+                                text.setStrokeWidth(0.0);
+                                text.setText("Hi Chinmay! Which quiz do you want to take today ?");
+                                text.setFont(new Font(23.0));
 
-                                button.setLayoutX(276.0);
-                                button.setLayoutY(221.0);
+                                label.setLayoutX(31.0);
+                                label.setLayoutY(91.0);
+                                label.setPrefHeight(25.0);
+                                label.setPrefWidth(51.0);
+                                label.setText("Name ");
+                                label.setFont(new Font(15.0));
+
+                                line.setEndX(499.0);
+                                line.setLayoutX(101.0);
+                                line.setLayoutY(69.0);
+                                line.setStartX(-110.5);
+
+                                label0.setLayoutX(82.0);
+                                label0.setLayoutY(91.0);
+                                label0.setPrefHeight(25.0);
+                                label0.setPrefWidth(84.0);
+                                label0.setText("Category");
+                                label0.setFont(new Font(15.0));
+
+                                label1.setLayoutX(166.0);
+                                label1.setLayoutY(91.0);
+                                label1.setPrefHeight(25.0);
+                                label1.setPrefWidth(149.0);
+                                label1.setText("Number of questions");
+                                label1.setFont(new Font(15.0));
+
+                                label2.setLayoutX(324.0);
+                                label2.setLayoutY(91.0);
+                                label2.setPrefHeight(25.0);
+                                label2.setPrefWidth(51.0);
+                                label2.setText("Points");
+                                label2.setFont(new Font(15.0));
+
+                                label3.setLayoutX(387.0);
+                                label3.setLayoutY(91.0);
+                                label3.setPrefHeight(25.0);
+                                label3.setPrefWidth(100.0);
+                                label3.setText("Highest score");
+                                label3.setFont(new Font(15.0));
+
+                                button.setLayoutX(499.0);
+                                button.setLayoutY(91.0);
                                 button.setMnemonicParsing(false);
-                                button.setText("Back");
+                                button.setStyle("-fx-background-color: #00ff00;");
+                                button.setText("Start quiz");
 
                                 Pane layout1 = new Pane();
                                 Scene scene1 = new Scene(layout1);
-                                layout1.getChildren().addAll(text2, button);
-                                primaryStage.setTitle("Help");
+
+                                layout1.getChildren().addAll(text, label, line, label0, label1, label2, label3, button);
+                                primaryStage.setTitle("Quizes");
                                 primaryStage.setScene(scene1);
                                 primaryStage.show();
                                 EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
@@ -641,33 +594,177 @@ public class QuizApp extends Application {
                                     public void handle(MouseEvent event) {
 
                                         if (event.getSource() == button) {
-                                            primaryStage.setScene(scene);
+// start quiz button
+                                            Rectangle rectangle = new Rectangle();
+                                            Label label = new Label();
+                                            Button button = new Button();
+                                            button0 = new Button();
+                                            Button button1 = new Button();
+                                            Button button2 = new Button();
+                                            Circle circle = new Circle();
+
+                                            rectangle.setStyle("-fx-background-color: #213456;");
+
+                                            rectangle.setArcHeight(5.0);
+                                            rectangle.setArcWidth(5.0);
+                                            rectangle.setFill(javafx.scene.paint.Color.WHITE);
+                                            rectangle.setHeight(114.0);
+                                            rectangle.setLayoutX(35.0);
+                                            rectangle.setLayoutY(156.0);
+                                            rectangle.setStroke(javafx.scene.paint.Color.BLACK);
+                                            rectangle.setStrokeType(javafx.scene.shape.StrokeType.INSIDE);
+                                            rectangle.setWidth(686.0);
+
+                                            label.setLayoutX(35.0);
+                                            label.setLayoutY(156.0);
+                                            label.setPrefHeight(114.0);
+                                            label.setPrefWidth(686.0);
+                                            label.setText("QUESTION BOX");
+                                            label.setWrapText(true);
+                                            label.setFont(new Font(22.0));
+
+                                            button.setLayoutX(113.0);
+                                            button.setLayoutY(318.0);
+                                            button.setMnemonicParsing(false);
+                                            button.setPrefHeight(73.0);
+                                            button.setPrefWidth(181.0);
+                                            button.setText("OP-1");
+
+                                            button0.setLayoutX(473.0);
+                                            button0.setLayoutY(318.0);
+                                            button0.setMnemonicParsing(false);
+                                            button0.setPrefHeight(73.0);
+                                            button0.setPrefWidth(181.0);
+                                            button0.setText("OP-2");
+
+                                            button1.setLayoutX(113.0);
+                                            button1.setLayoutY(417.0);
+                                            button1.setMnemonicParsing(false);
+                                            button1.setPrefHeight(73.0);
+                                            button1.setPrefWidth(181.0);
+                                            button1.setText("OP-3");
+
+                                            button2.setLayoutX(473.0);
+                                            button2.setLayoutY(417.0);
+                                            button2.setMnemonicParsing(false);
+                                            button2.setPrefHeight(73.0);
+                                            button2.setPrefWidth(181.0);
+                                            button2.setText("OP-4");
+
+                                            circle.setLayoutX(383.0);
+                                            circle.setLayoutY(407.0);
+                                            circle.setRadius(61.0);
+                                            circle.setStroke(javafx.scene.paint.Color.BLACK);
+                                            circle.setStrokeType(javafx.scene.shape.StrokeType.INSIDE);
+
+                                            Pane layout1 = new Pane();
+                                            Scene scene1 = new Scene(layout1);
+
+                                            layout1.getChildren().addAll(rectangle, label, button, button0, button1, button2, circle);
+                                            primaryStage.setTitle("Quiz");
+                                            primaryStage.setScene(scene1);
                                             primaryStage.show();
+                                            EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
+
+                                                @Override
+                                                public void handle(MouseEvent event) {
+
+                                                    if (event.getSource() == button) {
+                                                        //opt 1
+                                                    }
+                                                    else if (event.getSource() == button0) {
+                                                        //opt2
+                                                    }
+                                                    else if (event.getSource() == button1) {
+                                                        //opt3
+                                                    }
+                                                    else if (event.getSource() == button2) {
+                                                       // opt 4
+                                                    }
+                                                }
+                                            };
+                                    button.setOnMouseClicked (handler);
+                                    button0.setOnMouseClicked (handler);
+                                    button1.setOnMouseClicked (handler);
+                                    button2.setOnMouseClicked (handler);
+
                                         }
-                                        event.consume();
                                     }
 
                                 };
+                                    button.setOnMouseClicked (handler);
 
-                                button.setOnMouseClicked(handler);
+                                } else if (event.getSource() == button5) {
+// player signup
                             }
 
+                                event.consume();
+                            }
+
+                        }
+
+                        ;
+
+                        button4.setOnMouseClicked (handler);
+
+                        button5.setOnMouseClicked (handler);
+
+                    } else if (event.getSource()
+                        == button1) {
+                    Text text2 = new Text();
+                    Button button = new Button();
+
+                    text2.setLayoutX(141.0);
+                    text2.setLayoutY(100.0);
+                    text2.setStrokeType(javafx.scene.shape.StrokeType.OUTSIDE);
+                    text2.setStrokeWidth(0.0);
+                    text2.setText("->Click create quiz if you want to add your own quiz.\n->Click on play quiz if you want to play quizes created by others.\n->You need to login to do any of the above.");
+                    text2.setFont(new Font(15.0));
+
+                    button.setLayoutX(276.0);
+                    button.setLayoutY(221.0);
+                    button.setMnemonicParsing(false);
+                    button.setText("Back");
+
+                    Pane layout1 = new Pane();
+                    Scene scene1 = new Scene(layout1);
+                    layout1.getChildren().addAll(text2, button);
+                    primaryStage.setTitle("Help");
+                    primaryStage.setScene(scene1);
+                    primaryStage.show();
+                    EventHandler<MouseEvent> handler = new EventHandler<MouseEvent>() {
+
+                        @Override
+                        public void handle(MouseEvent event) {
+
+                            if (event.getSource() == button) {
+                                primaryStage.setScene(scene);
+                                primaryStage.show();
+                            }
                             event.consume();
                         }
 
                     };
 
                     button.setOnMouseClicked(handler);
-
-                    button0.setOnMouseClicked(handler);
-
-                    button1.setOnMouseClicked(handler);
-
                 }
 
-    
+                    event.consume();
+                }
 
-            public static void main(String[] args) {
-                launch();
             }
+
+            ;
+
+            button.setOnMouseClicked (handler);
+
+            button0.setOnMouseClicked (handler);
+
+            button1.setOnMouseClicked (handler);
+
         }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
