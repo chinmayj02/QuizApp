@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle height="618.0" layoutX="-11.0" layoutY="-13.0" stroke="BLACK" strokeType="INSIDE" width="849.0">
+         <fill>
+            <LinearGradient endX="0.29166663776744495" endY="0.09848486293445935" startX="0.30303031657681323" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.34005847573280334" green="0.28070175647735596" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5158638954162598" green="0.18240000307559967" blue="0.7599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="290.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZZI">
+         <font>
+            <Font name="Century Schoolbook" size="69.0" />
+         </font>
+      </Text>
+      <Text layoutX="278.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compete with your brain">
+         <font>
+            <Font name="Century Schoolbook" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="290.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="93.0" style="-fx-background-color: #FFC93C;" text="CREATE QUIZ" />
+      <Button layoutX="445.0" layoutY="356.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #439A97;" text="PLAY QUIZ" />
+      <Button layoutX="387.0" layoutY="515.0" mnemonicParsing="false" style="-fx-background-color: RED;" text="HELP">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

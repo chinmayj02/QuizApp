@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle height="618.0" layoutX="-11.0" layoutY="-13.0" stroke="BLACK" strokeType="INSIDE" width="849.0">
+         <fill>
+            <LinearGradient endX="0.29166663776744495" endY="0.09848486293445935" startX="0.30303031657681323" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.34005847573280334" green="0.28070175647735596" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5158638954162598" green="0.18240000307559967" blue="0.7599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="347.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZZI" wrappingWidth="135.19448852539062">
+         <font>
+            <Font name="Century Schoolbook" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="223.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZ MASTER PORTAL" wrappingWidth="397.5">
+         <font>
+            <Font name="Century Schoolbook" size="32.0" />
+         </font>
+      </Text>
+      <TableView layoutX="34.0" layoutY="193.0" prefHeight="366.0" prefWidth="761.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="SR.NO" />
+          <TableColumn prefWidth="165.5999984741211" text="QUIZ NAME" />
+            <TableColumn minWidth="0.0" prefWidth="129.5999755859375" text="CATEGORY" />
+            <TableColumn prefWidth="167.20004272460938" text="NUMBER OF QUESTIONS" />
+            <TableColumn prefWidth="93.60003662109375" text="TOTAL SCORE" />
+            <TableColumn prefWidth="127.99996337890627" text="ACTION" />
+        </columns>
+      </TableView>
+      <Button layoutX="678.0" layoutY="158.0" mnemonicParsing="false" style="-fx-background-color: #ADE792;" text="CREATE NEW QUIZ" />
+   </children>
+</AnchorPane>

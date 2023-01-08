@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle height="618.0" layoutX="-11.0" layoutY="-13.0" stroke="BLACK" strokeType="INSIDE" width="849.0">
+         <fill>
+            <LinearGradient endX="0.29166663776744495" endY="0.09848486293445935" startX="0.30303031657681323" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.34005847573280334" green="0.28070175647735596" blue="0.7894737124443054" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5158638954162598" green="0.18240000307559967" blue="0.7599999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text layoutX="347.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZZI" wrappingWidth="135.19448852539062">
+         <font>
+            <Font name="Century Schoolbook" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="223.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUIZ MASTER PORTAL" wrappingWidth="397.5">
+         <font>
+            <Font name="Century Schoolbook" size="32.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" height="397.0" layoutX="49.0" layoutY="179.0" stroke="BLACK" strokeType="INSIDE" width="731.0">
+         <effect>
+            <Shadow />
+         </effect>
+      </Rectangle>
+      <Label layoutX="110.0" layoutY="269.0" text="Question :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="214.0" layoutY="271.0" prefHeight="26.0" prefWidth="505.0" promptText="Enter your question" />
+      <Label layoutX="110.0" layoutY="309.0" text="Option - 1 :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="214.0" layoutY="311.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter option -1" />
+      <Label layoutX="110.0" layoutY="344.0" text="Option - 2 :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="214.0" layoutY="346.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter option -2" />
+      <Label layoutX="110.0" layoutY="378.0" text="Option - 3 :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="214.0" layoutY="380.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter option -3" />
+      <Label layoutX="110.0" layoutY="412.0" text="Option - 4 :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="214.0" layoutY="414.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter option -4" />
+      <Label layoutX="110.0" layoutY="447.0" text="Correct option :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="259.0" layoutY="449.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter correct option number" />
+      <Label layoutX="110.0" layoutY="483.0" text="Points :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="214.0" layoutY="485.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter the points" />
+      <Label layoutX="108.0" layoutY="238.0" text="Question number :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="238.0" text="Q.1" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="396.0" layoutY="515.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #68B984;" text="SAVE" />
+      <Label layoutX="108.0" layoutY="209.0" text="Quiz name :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="223.0" layoutY="209.0" prefHeight="26.0" prefWidth="170.0" promptText="Enter the quiz name" />
+      <Label layoutX="406.0" layoutY="208.0" text="Quiz category :-" textFill="#f4fffe">
+         <font>
+            <Font name="Calibri" size="21.0" />
+         </font>
+      </Label>
+      <TextField layoutX="546.0" layoutY="210.0" prefHeight="26.0" prefWidth="118.0" promptText="Enter quiz category" />
+      <TextField layoutX="688.0" layoutY="210.0" prefHeight="26.0" prefWidth="62.0" promptText="Total Pts" />
+      <Button layoutX="765.0" layoutY="23.0" mnemonicParsing="false" text="BACK" />
+   </children>
+</AnchorPane>
